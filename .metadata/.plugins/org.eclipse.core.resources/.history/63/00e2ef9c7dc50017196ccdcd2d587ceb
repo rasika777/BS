@@ -78,7 +78,7 @@ public class BootstrapServer {
                                     random_2 = r.nextInt(High-Low) + Low;
                                 }
                                 echo (random_1 + " " + random_2);
-                                reply += "2 " + nodes.get(random_1).getIp() + " " + nodes.get(random_1).getPort()+ " " + nodes.get(random_2).getIp() + " " + nodes.get(random_2).getPort();
+                                reply += "2 " + nodes.get(random_1).getIp() + " " + nodes.get(random_1).getPort()+ " " + nodes.get(random_1).getUsername() + " " + nodes.get(random_2).getIp() + " " + nodes.get(random_2).getPort() + " " + nodes.get(random_2).getUsername();
                             }
                             nodes.add(new Neighbour(ip, port, username));
                         }
